@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartAI Assistant</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white flex flex-col items-center justify-center min-h-screen p-4 transition-colors duration-300">
+  <h1 class="text-3xl font-bold mb-6">🤖 SmartAI Assistant</h1>
+
+  <div id="chat-container" class="w-full max-w-md h-96 overflow-y-auto bg-gray-800 rounded-lg p-4 space-y-2 mb-4 shadow-lg">
+    <!-- Chat messages will appear here -->
+  </div>
+
+  <div class="flex w-full max-w-md space-x-2">
+    <input id="user-input" type="text" placeholder="Ask something like weather, joke, news..." class="flex-1 p-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-400" />
+    <button id="send-button" class="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600 transition">Send</button>
+    <button id="mic-button" class="bg-green-500 px-4 py-2 rounded hover:bg-green-600 transition">🎤</button>
+  </div>
+
+  <div class="absolute top-4 right-4">
+    <button id="dark-mode-toggle" class="bg-gray-700 p-2 rounded hover:bg-gray-600 transition">🌓</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
